@@ -20,19 +20,22 @@ for item in list:
     fielExt = re.search(".[^\.]+$", fileUrl).group(0)
 
     # save icon image
-    filePath = LOCAL + "/images/icons/" + fileName + fielExt
+    strPath = "/images/icons/" + fileName + fielExt
+    filePath = LOCAL + strPath
     if not os.path.exists(filePath):
         r = requests.get(fileUrl)
         img = open(filePath, 'wb')
         img.write(r.content)
         img.close()
 
-    item['image_url'] = HOST + "/" + filePath
+    item['image_url'] = HOST + strPath
 
     # save game files
     urlPath = urlparse(item['url'])
     srcPath = os.path.dirname(LOCAL_WWW_ROOT + urlPath.path)
-    filePath = LOCAL + "/pack/" + fileName + ".7z"
+    strPath = "/pack/" + fileName + ".7z"
+    filePath = LOCAL + strPath
+    item['file'] = HOST + strPath
 
     print(srcPath)
     if not os.path.exists(filePath):
