@@ -1,6 +1,7 @@
 
 import json
 import re
+import time
 from urllib.parse import urlparse
 import requests
 import os.path
@@ -39,9 +40,12 @@ for item in list:
 
     print(srcPath)
     if not os.path.exists(filePath):
+        os.system("cp -r " + srcPath + " /tmp/" + fileName)
         # 压缩
-        os.system("7z a "+filePath+" "+srcPath)
+        #os.system("7z a "+filePath+" "+srcPath)
+        os.system("7z a "+filePath+" /tmp/"+fileName)
 
 # save game list
 gameList = open(LOCAL + "/game-list.json", 'w')
-json.dump(list, gameList)
+jsonData = {'game_list': list, 'update_time': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}
+json.dump(jsonData, gameList)
