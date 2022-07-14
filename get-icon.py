@@ -6,6 +6,7 @@ from urllib.parse import urlparse
 import requests
 import os.path
 import os
+from webpc import convert
 
 HOST = "https://ted-developer.github.io/game-files"
 LOCAL_WWW_ROOT = "/Users/yuanpeng01/Documents/code/game-cdn/cache"
@@ -40,7 +41,11 @@ for item in list:
 
     print(srcPath)
     if not os.path.exists(filePath):
+        os.system("rm -rf /tmp/*")
         os.system("cp -r " + srcPath + " /tmp/" + fileName)
+        # image to webp
+        convert("/tmp/" + fileName)
+
         # 压缩
         #os.system("7z a "+filePath+" "+srcPath)
         os.system("7z a "+filePath+" /tmp/"+fileName)
