@@ -7,13 +7,26 @@ import requests
 import os.path
 import os
 from webpc import convert
+from itertools import cycle
 
 HOST = "https://ted-developer.github.io/game-files"
-LOCAL_WWW_ROOT = "/Users/yuanpeng01/Documents/code/game-cdn/cache"
+LOCAL_WWW_ROOT = "/Users/xiaodugame/Documents/work/code/get-game/cache"
 LOCAL = os.path.dirname(__file__)
+key = [9]
 
-f = open("/Users/yuanpeng01/Downloads/download.json", "r")
+f = open("/Users/xiaodugame/Downloads/download.json", "r")
 list = json.loads(f.read())
+
+
+def encryteFile(name):
+    file = open(name, "r")
+
+    # 加密
+    byte = bytes(file.read(), 'utf-8')
+    encrypted = [a ^ b for (a, b) in zip(byte, cycle(key))]
+
+    fw = open(name, "wb")
+    fw.write(bytes(encrypted))
 
 
 for item in list:
@@ -41,10 +54,18 @@ for item in list:
 
     print(srcPath)
     if not os.path.exists(filePath):
+    #if os.path.exists(filePath):
         os.system("rm -rf /tmp/*")
         os.system("cp -r " + srcPath + " /tmp/" + fileName)
         # image to webp
         convert("/tmp/" + fileName)
+
+        # 加密js、json文件
+        for subdir, dirs, files in os.walk("/tmp/" + fileName):
+            for file_name in files:
+                if file_name.endswith('.js') or file_name.endswith('.json'):
+                    #print(os.path.join(subdir, file_name))
+                    encryteFile(os.path.join(subdir, file_name))
 
         # 压缩
         #os.system("7z a "+filePath+" "+srcPath)
