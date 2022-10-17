@@ -1297,7 +1297,40 @@
    "publish_time": "2021-10-21",
    "enable_ads": true,
    "file": "https://ted-developer.github.io/game-files/pack/bullethell-adventure-2.7z"
+  },
+  {
+   "show_title": "Rescue Boss Cut Rope",
+   "name": "rescue-boss-cut-rope",
+   "url": "http://172.24.220.181:8088/rvvASMiM/a98e1cc4fcab4ccfa85dcba5aa116b7f/index.html?gd_sdk_referrer_url=https%3A%2F%2Fgamedistribution.com%2Fgames%2Fsave-the-kitten&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzQ3YjM2NjZlOGNkNzQzNTU4MWEzYmM3ZmE3ZmIxODM1Lz9nZF9zZGtfcmVmZXJyZXJfdXJsPWh0dHBzOi8vZ2FtZWRpc3RyaWJ1dGlvbi5jb20vZ2FtZXMvc2F2ZS10aGUta2l0dGVuIiwicGFyZW50RG9tYWluIjoiZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ0b3BEb21haW4iOiJnYW1lZGlzdHJpYnV0aW9uLmNvbSIsImhhc0ltcHJlc3Npb24iOnRydWUsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuNiJ9",
+   "image_url": "https://ted-developer.github.io/game-files/images/icons/rescue-boss-cut-rope.jpeg",
+   "play_count": "123",
+   "category": "puzzle",
+   "publish_time": "2021-10-21",
+   "enable_ads": true,
+   "file": "https://ted-developer.github.io/game-files/pack/rescue-boss-cut-rope.7z"
+  },
+  {
+   "show_title": "Basketball serial shooter",
+   "name": "basketball-serial-shooter",
+   "url": "http://172.24.220.181:8088/rvvASMiM/655e8e76b5da47068f66054694967bbd/index.html?gd_sdk_referrer_url=https%3A%2F%2Fgamedistribution.com%2Fgames%2Fsave-the-kitten&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzQ3YjM2NjZlOGNkNzQzNTU4MWEzYmM3ZmE3ZmIxODM1Lz9nZF9zZGtfcmVmZXJyZXJfdXJsPWh0dHBzOi8vZ2FtZWRpc3RyaWJ1dGlvbi5jb20vZ2FtZXMvc2F2ZS10aGUta2l0dGVuIiwicGFyZW50RG9tYWluIjoiZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ0b3BEb21haW4iOiJnYW1lZGlzdHJpYnV0aW9uLmNvbSIsImhhc0ltcHJlc3Npb24iOnRydWUsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuNiJ9",
+   "image_url": "https://ted-developer.github.io/game-files/images/icons/basketball-serial-shooter.jpeg",
+   "play_count": "123",
+   "category": "action",
+   "publish_time": "2021-10-21",
+   "enable_ads": true,
+   "file": "https://ted-developer.github.io/game-files/pack/basketball-serial-shooter.7z"
+  },
+  {
+   "show_title": "Zoo Slings",
+   "name": "zoo-slings",
+   "url": "http://172.24.220.181:8088/rvvASMiM/b20fda3aa21548d789dbbc5a403675e2/index.html?gd_sdk_referrer_url=https%3A%2F%2Fgamedistribution.com%2Fgames%2Fsave-the-kitten&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2h0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tLzQ3YjM2NjZlOGNkNzQzNTU4MWEzYmM3ZmE3ZmIxODM1Lz9nZF9zZGtfcmVmZXJyZXJfdXJsPWh0dHBzOi8vZ2FtZWRpc3RyaWJ1dGlvbi5jb20vZ2FtZXMvc2F2ZS10aGUta2l0dGVuIiwicGFyZW50RG9tYWluIjoiZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJ0b3BEb21haW4iOiJnYW1lZGlzdHJpYnV0aW9uLmNvbSIsImhhc0ltcHJlc3Npb24iOnRydWUsImxvYWRlckVuYWJsZWQiOnRydWUsImhvc3QiOiJodG1sNS5nYW1lZGlzdHJpYnV0aW9uLmNvbSIsInZlcnNpb24iOiIxLjUuNiJ9",
+   "image_url": "https://ted-developer.github.io/game-files/images/icons/zoo-slings.jpeg",
+   "play_count": "123",
+   "category": "arcade",
+   "publish_time": "2021-10-21",
+   "enable_ads": true,
+   "file": "https://ted-developer.github.io/game-files/pack/zoo-slings.7z"
   }
  ],
- "update_time": "2022-10-17 18:59:09"
+ "update_time": "2022-10-17 20:09:49"
 }
