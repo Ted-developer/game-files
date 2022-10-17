@@ -1,6 +1,7 @@
 
 import json
 import re
+from shutil import copy2, copyfile
 import time
 from urllib.parse import urlparse
 import requests
@@ -96,10 +97,15 @@ for item in list:
         os.system("7z a "+filePath+" /tmp/"+fileName)
 
 # merge new download list with history 
-gameList = open(LOCAL + "/game-list.json", 'r')
+gameList = open(LOCAL + "/game-list-source.json", 'r')
 list = mergeList(json.loads(gameList.read())['game_list'], list)
 
 # save game list
-gameList = open(LOCAL + "/game-list.json", 'w')
+gameList = open(LOCAL + "/game-list-source.json", 'w')
+gameList2 = open(LOCAL + "/game-list.json", 'w')
 jsonData = {'game_list': list, 'update_time': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}
-json.dump(jsonData, gameList)
+json.dump(jsonData, gameList, indent=1)
+
+# 加密gamelist
+gameList2.write(json.dumps(jsonData))
+encryteFile(LOCAL + "/game-list.json")
